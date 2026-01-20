@@ -24,6 +24,14 @@ type FilterItem struct {
 }
 
 var (
+	AnsibleIcon   = "/apps/frontend-assets/technology-icons/ansible.svg"
+	OpenShiftIcon = "/apps/frontend-assets/technology-icons/openshift.svg"
+	RHELIcon      = "/apps/frontend-assets/technology-icons/rhel.svg"
+	RedHatIcon    = "/apps/frontend-assets/technology-icons/red-hat-badge.svg"
+	IAMIcon       = "/apps/frontend-assets/technology-icons/iam.svg"
+	SubsIcon      = "/apps/frontend-assets/technology-icons/subscriptions.svg"
+	SettingsIcon  = "/apps/frontend-assets/technology-icons/settings.svg"
+
 	FrontendFilters FilterData = FilterData{
 		Categories: []FiltersCategory{
 			{
@@ -32,17 +40,17 @@ var (
 				CategoryData: []CategoryGroup{{
 					Group: "Platforms",
 					Data: []FilterItem{
-						{Id: "ansible", CardLabel: "Ansible", FilterLabel: "Ansible"},
-						{Id: "openshift", CardLabel: "OpenShift", FilterLabel: "OpenShift"},
-						{Id: "rhel", CardLabel: "RHEL", FilterLabel: "RHEL (Red Hat Enterprise Linux)"},
+						{Id: "ansible", CardLabel: "Ansible", FilterLabel: "Ansible", Icon: AnsibleIcon},
+						{Id: "openshift", CardLabel: "OpenShift", FilterLabel: "OpenShift", Icon: OpenShiftIcon},
+						{Id: "rhel", CardLabel: "RHEL", FilterLabel: "RHEL (Red Hat Enterprise Linux)", Icon: RHELIcon},
 					},
 				},
 					{
 						Group: "Console-wide services",
 						Data: []FilterItem{
-							{Id: "iam", CardLabel: "Identity and Access Management", FilterLabel: "IAM (Identity and Access Management)"},
-							{Id: "settings", CardLabel: "Settings", FilterLabel: "Settings"},
-							{Id: "subscriptions-services", CardLabel: "Subscriptions services", FilterLabel: "Subscriptions services"},
+							{Id: "iam", CardLabel: "IAM", FilterLabel: "IAM (Identity & Access Management)", Icon: IAMIcon},
+							{Id: "settings", CardLabel: "Settings", FilterLabel: "Settings", Icon: SettingsIcon},
+							{Id: "subscriptions-services", CardLabel: "Subscriptions Services", FilterLabel: "Subscriptions Services", Icon: SubsIcon},
 						},
 					},
 				},
@@ -53,9 +61,9 @@ var (
 				CategoryData: []CategoryGroup{{
 					Data: []FilterItem{
 						{Id: "documentation", CardLabel: "Documentation", FilterLabel: "Documentation", Color: "orange"},
-						{Id: "learningPath", CardLabel: "Learning path", FilterLabel: "Learning paths", Color: "cyan"},
+						{Id: "learningPath", CardLabel: "Learning path", FilterLabel: "Learning path", Color: "cyan"},
 						{Id: "quickstart", CardLabel: "Quick start", FilterLabel: "Quick start", Color: "green"},
-						{Id: "otherResource", CardLabel: "Other", FilterLabel: "Other content types", Color: "purple"},
+						{Id: "otherResource", CardLabel: "Other", FilterLabel: "Other", Color: "purple"},
 					},
 				}},
 			},

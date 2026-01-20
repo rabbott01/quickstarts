@@ -3,14 +3,14 @@ name: insights-inventory-workspace
 tags:
 - kind: bundle
   value: insights
-- kind: application
-  value: inventory
 - kind: bundle
   value: iam
 - kind: application
+  value: inventory
+- kind: application
   value: user access
 - kind: content
-  value: quick start
+  value: quickstart
 - kind: product-families
   value: rhel
 - kind: product-families

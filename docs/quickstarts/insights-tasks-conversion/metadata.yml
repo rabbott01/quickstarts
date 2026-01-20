@@ -4,4 +4,10 @@ tags:
 - kind: bundle
   value: insights
 - kind: content
-  value: quick start
+  value: quickstart
+- kind: product-families
+  value: rhel
+- kind: use-case
+  value: infrastructure
+- kind: use-case
+  value: system-configuration
